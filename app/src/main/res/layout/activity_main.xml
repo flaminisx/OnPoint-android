@@ -24,13 +24,47 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:id="@+id/imageView2"
-            android:background="#FF5300"/>
+            android:background="@mipmap/background" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="30dp"
             android:id="@+id/someTextView"
-            android:text="#TEXT IN CUSTOM VIEW"/>
+            android:text="Danil Sizov"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/myLevel"
+            android:layout_marginLeft="10dp"
+            android:text="1 lvl"/>
+
+        <ProgressBar
+            android:id="@+id/pb_horizontal"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:max="100"
+            android:progress="40"
+            android:indeterminate="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:id="@+id/myXpAndCoins"
+            android:text="Награды"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageView3"
+            android:background="@mipmap/mynag" />
     </LinearLayout>
 
 </android.support.v4.widget.DrawerLayout>
