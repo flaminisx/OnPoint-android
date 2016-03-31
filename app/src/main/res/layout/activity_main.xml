@@ -20,11 +20,21 @@
         android:background="@color/white"
         android:orientation="vertical">
 
-        <ImageView
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:id="@+id/imageView2"
-            android:background="@mipmap/background" />
+            android:background="@mipmap/background">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@mipmap/circle"
+                android:layout_gravity="top|center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp" />
+
+        </FrameLayout>
+
 
         <TextView
             android:layout_width="match_parent"
@@ -52,19 +62,238 @@
             android:progress="40"
             android:indeterminate="false" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="30dp"
+                android:id="@+id/myXpAndCoins"
+                android:text="XP:"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#f1ad1d" />
+            <TextView
+                android:layout_width="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="30dp"
+                android:id="@+id/myXpAndCoins2"
+                android:text="28"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="65dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="30dp"
+                android:id="@+id/myXpAndCoins3"
+                android:text="Coins:"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#f1ad1d" />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="30dp"
+                android:id="@+id/myXpAndCoins4"
+                android:text="125"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
         <TextView
             android:layout_width="match_parent"
             android:layout_marginTop="10dp"
             android:layout_height="30dp"
-            android:id="@+id/myXpAndCoins"
+            android:id="@+id/myBest"
             android:text="Награды"
             android:layout_marginLeft="10dp"
             android:textSize="20dp" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/imageView3"
-            android:background="@mipmap/mynag" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView3"
+                android:background="@mipmap/mynag"
+                android:layout_gravity="left" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView4"
+                android:background="@mipmap/mynag"
+                android:layout_gravity="center" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView5"
+                android:background="@mipmap/mynag"
+                android:layout_gravity="right" />
+        </FrameLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#ffffff"
+            android:background="#f1ad1d"
+            android:text="Мои Кампании"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/kiev"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Загадочный Киев"
+                    android:background="#f0f0f0"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/myPrisePrise"
+                        android:text="Пройденно"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="#f1ad1d" />
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/myPriseValue"
+                        android:text="84%"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@mipmap/starwars"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Звезда и Война"
+                        android:background="#f0f0f0"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/myPrisePrise2"
+                            android:text="Пройденно"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="15dp"
+                            android:textColor="#f1ad1d" />
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/myPriseValue2"
+                            android:text="21%"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#ffffff"
+        android:background="#f1ad1d"
+        android:text="Помощь"
+        android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="#f0f0f0"
+            android:text="Настройки" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="#f0f0f0"
+            android:text="Выход" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/vk"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/fb"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/tw"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
     </LinearLayout>
 
 </android.support.v4.widget.DrawerLayout>
