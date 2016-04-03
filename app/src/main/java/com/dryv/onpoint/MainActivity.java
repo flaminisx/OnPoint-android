@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.setStatusBarBackground(R.color.colorPrimaryDark);
+        drawer.setStatusBarBackground(R.color.colorAccent);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
